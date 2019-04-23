@@ -12,4 +12,5 @@ consign()
 
 app.db = db;
 
-app.listen(3000, () => console.log('servidor levantado'));
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log('server running...'));
