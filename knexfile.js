@@ -1,10 +1,12 @@
+//connection: {
+//   database: 'tasks',
+//   user:     'postgres',
+//   password: '1234'
+// }
+
 module.exports = {
   client: 'postgresql',
-  connection: {
-    database: 'tasks',
-    user:     'postgres',
-    password: '1234'
-  },
+  connection: process.env.DATABASE_URL,
   pool: {
     min: 2,
     max: 10
